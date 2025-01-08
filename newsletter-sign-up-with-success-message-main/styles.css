@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--dark-slate-grey);
+}
+
+/* sign up form */
+.sign-up-banner img{
+    max-width: ;
+}
+
+.sign-up-container{
+    max-width: 400px;
+   
+}
+.sign-up-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 400px;
+    align-items: center;
+}
+
+.perks-list{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    
+}
+
+.perk-list-items { 
+    max-width: 375px;
+}
+
+.perk {
+    display: flex;
+    flex-direction: row;
+        
+}
