@@ -9,16 +9,11 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Sign-up form start -->
-  <div class="sign-up-container">
+  <div class="container">
 
     <!-- sign up banner for mobile -->
     <div class="signup-banner-mobile">
@@ -50,20 +45,21 @@
           </div>
         </div>
       </section><!-- perk list end -->    
-        
-        
-      
 
       
-      <form action="" method="get">
-        <h3 class="form-title">Email address</h3>
-        <input type="email" name="email" class="form-item" id="email" value="email@company.com " required>
-        <input type="submit" name="" class="btn form-item" value="Subscribe to monthly newsletter">
+      <form action="complete.html" method="get">
+
+        <label for="email" class="form-title bold">Email address</label>
+
+        <input type="email" name="email" class="form-item" id="email" placeholder="email@company.com" required>
+        
+        <input type="submit" id="formsubmit" class="btn form-item" value="Subscribe to monthly newsletter">
       </form>
 
+
       
 
-    </div>
+    </div> <!-- sign up content close -->
 
       <div class="signup-banner-desktop">
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
