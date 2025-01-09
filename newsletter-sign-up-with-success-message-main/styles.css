@@ -15,23 +15,38 @@
 body {
     font-family: Roboto, sans-serif;
     color: var(--dark-slate-grey);
+    background-color: var(--charcoal-grey);
+    
 }
 
 /* sign up form */
-.sign-up-banner img{
-    max-width: ;
+.signup-banner-mobile img{
+    display: none;
+}
+.signup-banner-desktop img{
+    margin: 1rem;
+    max-width: 325px;
+    
 }
 
 .sign-up-container{
-    max-width: 400px;
-   
+    display: flex;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 10rem auto;
+    font-weight: 400;
+
 }
 .sign-up-content {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    max-width: 400px;
-    align-items: center;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.heading{
+    font-size: 50px;
 }
 
 .perks-list{
@@ -41,6 +56,10 @@ body {
     
 }
 
+.perks-list-header {
+    margin-bottom: 1rem;
+}
+
 .perk-list-items { 
     max-width: 375px;
 }
@@ -48,5 +67,72 @@ body {
 .perk {
     display: flex;
     flex-direction: row;
-        
+    padding: 10px 0 10px 0
+}
+
+.perk img{
+    margin-right: 1rem;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-item {
+    height: 3rem;
+    border-radius: 8px;
+    border: var(--grey) 1px solid;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    
+}
+
+#email {
+    color: var(--grey);
+    padding: 1rem;
+}
+
+.btn {
+    color: hsl(240, 9%, 98%);
+    background-color: var(--dark-slate-grey);
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--tomato);
+    cursor: pointer;
+}
+
+
+
+/* Break point is 650px */
+
+@media screen and (max-width: 650px){
+    .signup-banner-desktop{
+        display: none;
+    }
+
+    .signup-banner-mobile img {
+        display: block;
+        width: 600px;
+        min-width: 100%;
+    }
+
+
+    .sign-up-container{
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+    }
+
+
 }

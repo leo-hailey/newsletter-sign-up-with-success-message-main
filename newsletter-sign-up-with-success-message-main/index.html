@@ -19,9 +19,12 @@
 
   <!-- Sign-up form start -->
   <div class="sign-up-container">
-    <div class="signup-banner">
+
+    <!-- sign up banner for mobile -->
+    <div class="signup-banner-mobile">
       <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-    </div>
+    </div> <!-- banner close -->
+
      
     <div class="sign-up-content">
       <h1 class="heading"> Stay updated!</h1>
@@ -51,32 +54,36 @@
         
       
 
-      <form action="">
-        <h3>Email address</h3>
-        <span>email@company.com</span>
+      
+      <form action="" method="get">
+        <h3 class="form-title">Email address</h3>
+        <input type="email" name="email" class="form-item" id="email" value="email@company.com " required>
+        <input type="submit" name="" class="btn form-item" value="Subscribe to monthly newsletter">
       </form>
 
-      <button class="btn"> Subscribe to monthly newsletter </button>
+      
 
     </div>
+
+      <div class="signup-banner-desktop">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+
   </div><!-- Sign-up form end -->
 
   
 
   <!-- Success message start -->
-
+<!-- 
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
-  Dismiss message
+  Dismiss message -->
 
   <!-- Success message end -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
