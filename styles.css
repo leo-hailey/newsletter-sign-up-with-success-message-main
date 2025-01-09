@@ -115,14 +115,14 @@ form{
 
 /* Break point is 650px */
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 600px){
     .signup-banner-desktop{
         display: none;
     }
 
     .signup-banner-mobile img {
         display: block;
-        width: 600px;
+        width: 500px;
         min-width: 100%;
     }
 
@@ -130,6 +130,7 @@ form{
     .sign-up-container{
         flex-direction: column;
         width: 100%;
+        margin: 0;
         overflow: hidden;
         align-items: center;
     }
