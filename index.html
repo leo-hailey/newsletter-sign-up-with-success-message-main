@@ -47,12 +47,17 @@
       </section><!-- perk list end -->    
 
       
-      <form action="complete.html" method="get">
+      <form action="complete.html" id="form" method="get">
 
         <label for="email" class="form-title bold">Email address</label>
+        <p class="form_toolbar_label" id="error">
+          Valid Email Required
+        </p>
 
         <input type="email" name="email" class="form-item" id="email" placeholder="email@company.com" required>
         
+        
+
         <input type="submit" id="formsubmit" class="btn form-item" value="Subscribe to monthly newsletter">
       </form>
 
@@ -80,6 +85,6 @@
 
   <!-- Success message end -->
   
-
+  <script src="script.js"></script>
 </body>
 </html>

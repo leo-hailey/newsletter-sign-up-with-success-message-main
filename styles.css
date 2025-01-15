@@ -10,6 +10,12 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
+
+    --valid: hsl(107, 62%, 31%);
+    --valid-transparent: hsla(107, 62%, 31%, 0.1);
+  
+    --invalid: hsl(14, 97%, 43%);
+    --invalid-transparent: hsla(14, 99%, 40%, 0.1);
 }
 
 body {
@@ -22,6 +28,7 @@ body {
 .bold{
     font-weight: 700;
 }
+
 
 /* sign up form */
 .signup-banner-mobile img{
@@ -85,6 +92,13 @@ form{
 
 }
 
+.form_toolbar_label#error {
+    color: var(--invalid);
+    display: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .form-title {
     font-size: 14px;
     
@@ -118,6 +132,27 @@ form{
 
 
 
+/* Valid and invalid styles */
+#form.invalid input:first-of-type {
+    border: var(--invalid) 1px solid;
+    background-color: var(--invalid-transparent);
+    color: var(--invalid);
+  }
+  
+#form.valid input:first-of-type {
+    border: var(--valid) 1px solid;
+    background-color: var(--valid-transparent);
+    color: var(--valid);
+  }
+  
+#form.invalid #error {
+    display: block;
+  }
+  
+#form.valid #error {
+    display: none;
+  }
+/* Valid and invalid close */
 
 
 /* Success page */
@@ -142,6 +177,7 @@ form{
 @media screen and (max-width: 600px){
     .signup-banner-desktop{
         display: none;
+        width: 100vh;
     }
 
     .signup-banner-mobile img {
@@ -161,8 +197,9 @@ form{
 
     .success {
         max-width: 100%;
-        height: 100%;
-
+        height: 100vh;
+        border-radius: 0;
+        justify-content: center;
     }
 
 }
